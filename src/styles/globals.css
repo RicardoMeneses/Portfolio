@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-title: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea) var(--x, 0) / 200%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1f2a42;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-container__bg {
+  background: url(/img/bg-home.jpg) center no-repeat;
+  background-size: cover;
+}
