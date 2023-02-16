@@ -22,7 +22,6 @@ export default function Home() {
                 <p className='text-white text-2xl md:text-3xl'>Desarrollador Web Full Stack</p>
                 <TypeAnimation
                   sequence={['Front-end', 1000, 'Back-end', 1000]}
-                  //  Replacing previous Text
                   style={{
                     fontSize: '1.875rem',
                     color: '#fff',

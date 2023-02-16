@@ -10,7 +10,7 @@ interface Props {
 const IconLink: React.FC<Props> = ({ icon, href }) => {
   return (
     <Link
-      className='rounded-[50%] w-[50px] h-[50px] bg-[#1F2A42] flex items-center justify-center text-cyan-500 cursor-pointer'
+      className='rounded-[50%] w-[50px] h-[50px] bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center text-white hover:from-white hover:to-white hover:text-cyan-500 hover:scale-110 transition-all duration-200 cursor-pointer'
       href={href}
       target='_blank'
     >

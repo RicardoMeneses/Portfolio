@@ -36,13 +36,13 @@ const resumen = () => {
       id: generarId(),
       years: '2013-2019',
       title: 'Escuela Superior de Cómputo (ESCOM-IPN)',
-      description: 'Ing. en Sistemas Computacionales (Completé 178 créditos)',
+      description: 'Ing. en Sistemas Computacionales',
     },
     {
       id: generarId(),
       years: '2018',
       title: 'DevF',
-      description: 'Cinta roja en diseño de arquitecturas para crearaplicaciones Web',
+      description: 'Cinta roja en diseño de arquitecturas para crear aplicaciones Web',
     },
     {
       id: generarId(),
@@ -63,7 +63,7 @@ const resumen = () => {
       years: '2019-2022',
       title: 'Raccoon Studio',
       description:
-        'Creación, implementación y administración de sitios Web desde cero, backend y frontend, E-Commerce, Uso de servicios en la nube con AWS, administración y gestión de servidores EC2',
+        'Creación, implementación y administración de sitios Web desde cero, Back-end y Front-end, E-Commerce, Uso de servicios en la nube con AWS, administración y gestión de servidores EC2',
     },
   ];
   const softSkills = [
