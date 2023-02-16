@@ -48,7 +48,7 @@ const resumen = () => {
       id: generarId(),
       years: '2018',
       title: 'DevF',
-      description: 'Cinta negra en diseño de arquitecturas para crearaplicaciones Web',
+      description: 'Cinta negra en diseño de arquitecturas para crear aplicaciones Web',
     },
   ];
   const labor = [
@@ -139,7 +139,7 @@ const resumen = () => {
       <Banner title='Resumen' />
       <div className='grid grid-cols-2 my-20 justify-center gap-10 md:gap-0'>
         <div className='col-span-2'>
-          <p className='text-center text-white pb-20 text-3xl mt-5 md:mt-0 md:text-5xl font-bold'>
+          <p className='text-center text-white md:pb-20 text-3xl md:text-5xl font-bold'>
             Experiencia
           </p>
         </div>

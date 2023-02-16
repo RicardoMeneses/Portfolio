@@ -16,7 +16,7 @@ const Header = () => {
   };
   return (
     <header>
-      <nav className='bg-[#000]/25 text-white w-full fixed flex justify-between px-10 md:px-20 py-3 items-center z-50'>
+      <nav className='bg-[#000]/50 text-white w-full fixed flex justify-between px-10 md:px-20 py-3 items-center z-50'>
         <Link href='/' className='text-4xl'>
           RM
         </Link>

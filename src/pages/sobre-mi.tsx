@@ -14,16 +14,16 @@ import {
 const sobreMi = () => {
   const interests = [
     {
+      icon: faCode,
+      text: 'Programación',
+    },
+    {
       icon: faTableTennis,
       text: 'Ping Pong',
     },
     {
       icon: faPlane,
       text: 'Viajar',
-    },
-    {
-      icon: faCode,
-      text: 'Programación',
     },
     {
       icon: faGamepad,
