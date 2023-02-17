@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaWindowClose } from 'react-icons/fa';
+import { useTranslation } from 'next-i18next';
 
 interface Props {
   openMenu: boolean;
@@ -10,6 +11,7 @@ interface Props {
 const SideBar: React.FC<Props> = ({ openMenu, handleOpen }) => {
   const router = useRouter();
   const activeClass = 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md py-1 px-2';
+  const { t } = useTranslation('common');
 
   return (
     <div
@@ -27,28 +29,28 @@ const SideBar: React.FC<Props> = ({ openMenu, handleOpen }) => {
           className={router.pathname === '/' ? activeClass : 'text-black'}
           onClick={handleOpen}
         >
-          Inicio
+          {t('header.home')}
         </Link>
         <Link
           href='/sobre-mi'
           className={router.pathname === '/sobre-mi' ? activeClass : 'text-black'}
           onClick={handleOpen}
         >
-          Sobre mí
+          {t('header.about')}
         </Link>
         <Link
           href='/proyectos'
           className={router.pathname === '/proyectos' ? activeClass : 'text-black'}
           onClick={handleOpen}
         >
-          Proyectos
+          {t('header.projects')}
         </Link>
         <Link
           href='/resumen'
           className={router.pathname === '/resumen' ? activeClass : 'text-black'}
           onClick={handleOpen}
         >
-          Resumen
+          {t('header.resume')}
         </Link>
       </div>
     </div>

@@ -1,0 +1,52 @@
+{
+  "home": {
+    "hello": "Hello World!",
+    "iam": "I'm",
+    "developer": "Full Stack Web Developer",
+    "download": "Download CV"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+  "about": {
+    "title": "About me",
+    "developer": "Full Stack Web Developer",
+    "me": "Web developer with more than three years of experience in backend and frontend, constantly learning skills and professional growth.",
+    "interests": "Interests and Hobbies",
+    "programming": "Programming",
+    "pingPong": "Ping Pong",
+    "travel": "Travel",
+    "games": "Video game",
+    "read": "Read",
+    "music": "Music",
+    "soccer": "Soccer",
+    "cinema": "Cinema"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "resume": {
+    "title": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "work": "Work experience",
+    "engineer": "Computer Systems Engineer",
+    "red": "Red ribbon in architecture design to create Web applications",
+    "black": "Black ribbon in architecture design to create Web applications",
+    "seo": "SEO Intern",
+    "seoDescription": "WEB positioning, Web Development, Review and correction of metadata.",
+    "raccoon": "Creation, implementation and administration of websites from scratch, Back-end and Front-end, E-Commerce, Use of cloud services with AWS, administration and management of EC2 servers",
+    "softSkills": "Soft Skills",
+    "communication": "Communication",
+    "teamwork": "Teamwork",
+    "adaptability": "Adaptability",
+    "leadership": "Leadership",
+    "technicalSkills": "Technical Skills"
+  },
+  "footer": {
+    "made": "Made with ❤️ by"
+  }
+}

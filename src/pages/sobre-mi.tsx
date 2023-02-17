@@ -10,45 +10,49 @@ import {
   faFutbol,
   faFilm,
 } from '@fortawesome/free-solid-svg-icons';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
 
 const sobreMi = () => {
+  const { t } = useTranslation('common');
   const interests = [
     {
       icon: faCode,
-      text: 'Programación',
+      text: t('about.programming'),
     },
     {
       icon: faTableTennis,
-      text: 'Ping Pong',
+      text: t('about.pingPong'),
     },
     {
       icon: faPlane,
-      text: 'Viajar',
+      text: t('about.travel'),
     },
     {
       icon: faGamepad,
-      text: 'Video juegos',
+      text: t('about.games'),
     },
     {
       icon: faBook,
-      text: 'Leer',
+      text: t('about.read'),
     },
     {
       icon: faMusic,
-      text: 'Música',
+      text: t('about.music'),
     },
     {
       icon: faFutbol,
-      text: 'Fútbol',
+      text: t('about.soccer'),
     },
     {
       icon: faFilm,
-      text: 'Cine',
+      text: t('about.cinema'),
     },
   ];
   return (
     <>
-      <Banner title='Sobre mí' />
+      <Banner title={t('about.title')} />
       <div className='grid grid-cols-2 justify-center items-center text-white p-10 md:p-0'>
         <div className=' col-span-2 md:col-span-1 relative w-full h-[28rem] flex justify-center items-center'>
           <div className='bounce-top border-4 rounded-2xl border-[#222F42] absolute top-[5rem] right-[3rem] md:right-[16rem] h-80 w-64'></div>
@@ -60,15 +64,12 @@ const sobreMi = () => {
         </div>
         <div className='col-span-2 md:col-span-1 text-center md:text-left text-focus-in'>
           <p className='font-bold text-3xl'>Ricardo Meneses Morales</p>
-          <p>Desarrollador Web Full Stack</p>
-          <p className='md:w-3/4 mt-8'>
-            Desarrollador Web con más de tres años de experiencia en backend y frontend, en
-            constante aprendizaje de habilidades y crecimiento profesional.
-          </p>
+          <p>{t('about.developer')}</p>
+          <p className='md:w-3/4 mt-8'>{t('about.me')}</p>
         </div>
         <div className='col-span-2'>
           <p className='text-center text-3xl mt-5 md:mt-0 md:text-5xl font-bold'>
-            Intereses y Hobbies
+            {t('about.interests')}
           </p>
         </div>
         <div className='col-span-2 my-10 md:px-10'>
@@ -84,3 +85,11 @@ const sobreMi = () => {
 };
 
 export default sobreMi;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ? locale : '', ['common'])),
+    },
+  };
+};

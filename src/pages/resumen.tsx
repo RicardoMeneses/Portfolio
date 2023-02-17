@@ -22,8 +22,12 @@ import {
   faCss3,
   faJs,
 } from '@fortawesome/free-brands-svg-icons';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
 
 const resumen = () => {
+  const { t } = useTranslation('common');
   const generarId = () => {
     const random = Math.random().toString(36).substring(2);
     const fecha = Date.now().toString(36);
@@ -36,52 +40,53 @@ const resumen = () => {
       id: generarId(),
       years: '2013-2019',
       title: 'Escuela Superior de Cómputo (ESCOM-IPN)',
-      description: 'Ing. en Sistemas Computacionales',
+      description: t('resume.engineer'),
     },
     {
       id: generarId(),
       years: '2018',
       title: 'DevF',
-      description: 'Cinta roja en diseño de arquitecturas para crear aplicaciones Web',
+      description: t('resume.red'),
     },
     {
       id: generarId(),
       years: '2018',
       title: 'DevF',
-      description: 'Cinta negra en diseño de arquitecturas para crear aplicaciones Web',
+      description: t('resume.black'),
     },
   ];
   const labor = [
     {
       id: generarId(),
       years: '2018-2019',
-      title: 'Becario SEO',
-      description: 'Posicionamiento WEB, Desarrollo Web, Revisión y corrección de metadatos.',
+      title: t('resume.seo'),
+      name: 'Sube Agencia Digital',
+      description: t('resume.seoDescription'),
     },
     {
       id: generarId(),
       years: '2019-2022',
-      title: 'Raccoon Studio',
-      description:
-        'Creación, implementación y administración de sitios Web desde cero, Back-end y Front-end, E-Commerce, Uso de servicios en la nube con AWS, administración y gestión de servidores EC2',
+      title: t('home.developer'),
+      name: 'Raccoon Studio',
+      description: t('resume.raccoon'),
     },
   ];
   const softSkills = [
     {
       icon: faComment,
-      text: 'Comunicación',
+      text: t('resume.communication'),
     },
     {
       icon: faPeopleArrows,
-      text: 'Trabajo en equipo',
+      text: t('resume.teamwork'),
     },
     {
       icon: faGear,
-      text: 'Adaptabilidad',
+      text: t('resume.adaptability'),
     },
     {
       icon: faPeopleGroup,
-      text: 'Liderazgo',
+      text: t('resume.leadership'),
     },
   ];
   const technicalSkills = [
@@ -136,22 +141,22 @@ const resumen = () => {
   ];
   return (
     <>
-      <Banner title='Resumen' />
+      <Banner title={t('resume.title')} />
       <div className='grid grid-cols-2 my-20 justify-center gap-10 md:gap-0'>
         <div className='col-span-2'>
           <p className='text-center text-white md:pb-20 text-3xl md:text-5xl font-bold'>
-            Experiencia
+            {t('resume.experience')}
           </p>
         </div>
         <div className=' col-span-2 md:col-span-1'>
-          <Experience title='Educación' timeLine={education} />
+          <Experience title={t('resume.education')} timeLine={education} />
         </div>
         <div className='col-span-2 md:col-span-1'>
-          <Experience title='Laboral' timeLine={labor} />
+          <Experience title={t('resume.work')} timeLine={labor} />
         </div>
         <div className='col-span-2 mt-20'>
           <p className='text-center text-white text-3xl md:mt-0 md:text-5xl font-bold'>
-            Habilidades Blandas
+            {t('resume.softSkills')}
           </p>
         </div>
         <div className='col-span-2 my-10 px-10'>
@@ -163,7 +168,7 @@ const resumen = () => {
         </div>
         <div className='col-span-2 mt-0 md:mt-20'>
           <p className='text-center text-white text-3xl md:mt-0 md:text-5xl font-bold'>
-            Habilidades Técnicas
+            {t('resume.technicalSkills')}
           </p>
         </div>
         <div className='col-span-2 my-10 px-10'>
@@ -179,3 +184,11 @@ const resumen = () => {
 };
 
 export default resumen;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ? locale : '', ['common'])),
+    },
+  };
+};

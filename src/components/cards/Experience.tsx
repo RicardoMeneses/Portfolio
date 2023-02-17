@@ -9,6 +9,7 @@ interface TimeLineI {
   id: string;
   years: string;
   title: string;
+  name?: string;
   description: string;
 }
 

@@ -6,6 +6,7 @@ interface Experience {
   years: string;
   title: string;
   description: string;
+  name?: string;
 }
 
 const TimeLine: React.FC<Props> = ({ experience }) => {
@@ -15,7 +16,8 @@ const TimeLine: React.FC<Props> = ({ experience }) => {
         <p className=' ml-6'>{experience.years}</p>
       </div>
       <div className='relative pt-16 pb-10 px-10'>
-        <p className='font-bold mb-3'>{experience.title}</p>
+        <p className='font-bold'>{experience.title}</p>
+        {experience.name && <p className='mb-3 text-sm'>{experience.name}</p>}
         <p>{experience.description}</p>
       </div>
     </div>
