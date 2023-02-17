@@ -14,7 +14,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 
-const sobreMi = () => {
+const SobreMi = () => {
   const { t } = useTranslation('common');
   const interests = [
     {
@@ -84,7 +84,7 @@ const sobreMi = () => {
   );
 };
 
-export default sobreMi;
+export default SobreMi;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {

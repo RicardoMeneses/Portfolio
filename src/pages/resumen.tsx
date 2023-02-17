@@ -26,7 +26,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 
-const resumen = () => {
+const Resumen = () => {
   const { t } = useTranslation('common');
   const generarId = () => {
     const random = Math.random().toString(36).substring(2);
@@ -183,7 +183,7 @@ const resumen = () => {
   );
 };
 
-export default resumen;
+export default Resumen;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
