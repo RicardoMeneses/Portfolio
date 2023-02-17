@@ -10,7 +10,7 @@ const MyMenu = (props: any) => {
     <Menu
       menuButton={
         <MenuButton className='flex items-center gap-1'>
-          <span className=' uppercase'>{content} </span>
+          <span className=' uppercase text-xl'>{content} </span>
           <FaChevronDown className='text-xs' />
         </MenuButton>
       }

@@ -52,8 +52,16 @@ const Header = () => {
         <div className='flex md:hidden text-3xl items-center gap-3'>
           <div className='flex justify-center items-center cursor-pointer'>
             <MyMenu content={locale}>
-              {locale !== 'es' && <MenuItem onClick={() => changeLanguage('es')}>Español</MenuItem>}
-              {locale !== 'en' && <MenuItem onClick={() => changeLanguage('en')}>English</MenuItem>}
+              {locale !== 'es' && (
+                <MenuItem className='text-xl' onClick={() => changeLanguage('es')}>
+                  Español
+                </MenuItem>
+              )}
+              {locale !== 'en' && (
+                <MenuItem className='text-xl' onClick={() => changeLanguage('en')}>
+                  English
+                </MenuItem>
+              )}
             </MyMenu>
           </div>
           <FaBars onClick={handleOpen} />

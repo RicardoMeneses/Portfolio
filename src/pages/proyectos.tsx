@@ -8,24 +8,40 @@ const Proyectos = () => {
   const { t } = useTranslation('common');
   const projects = [
     {
+      title: 'RaccoonDev Studio',
+      link: 'https://raccoondev.studio/',
+      img: '/img/RaccoonDev.png',
+      tech: ['NextJS', 'ReactJS', 'NodeJS', 'Bootstrap'],
+    },
+    {
       title: 'Oleum Vitae',
       link: 'https://oleumvitae.com.mx/',
       img: '/img/OleumVitae.png',
+      tech: ['NuxtJS', 'VueJS', 'Shopify', 'NodeJS', 'Bootstrap'],
     },
     {
       title: 'Qveggie',
       link: 'https://www.qveggie.com/',
       img: '/img/QVeggie.png',
+      tech: ['NuxtJS', 'VueJS', 'Worpdress', 'NodeJS', 'Vuetify'],
     },
     {
       title: 'Crepini',
       link: 'https://crepiniplantbased.com/',
       img: '/img/Crepini.png',
+      tech: ['NuxtJS', 'VueJS', 'Worpdress', 'NodeJS', 'Vuetify'],
     },
     {
       title: 'Deliver México',
       link: 'https://delivermexico.com.mx/',
       img: '/img/Deliver.png',
+      tech: ['NuxtJS', 'VueJS', 'GraphQl', 'Bootstrap'],
+    },
+    {
+      title: 'Colectivo Ahuejote',
+      link: 'https://www.colectivoahuejote.mx/',
+      img: '/img/Ahuejote.png',
+      tech: ['NuxtJS', 'VueJS', 'Worpdress', 'NodeJS', 'Vuetify'],
     },
   ];
   return (

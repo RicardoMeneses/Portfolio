@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { FaWindowClose } from 'react-icons/fa';
+import { FaBriefcase, FaHome, FaIdCard, FaUser, FaWindowClose } from 'react-icons/fa';
 import { useTranslation } from 'next-i18next';
 
 interface Props {
@@ -10,7 +10,9 @@ interface Props {
 
 const SideBar: React.FC<Props> = ({ openMenu, handleOpen }) => {
   const router = useRouter();
-  const activeClass = 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md py-1 px-2';
+  const activeClass =
+    'bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md py-1 px-2 flex flex-col items-center border-l-2 border-r-2 py-3 text-2xl';
+  const normalClass = 'flex flex-col text-black items-center py-3 text-2xl';
   const { t } = useTranslation('common');
 
   return (
@@ -23,33 +25,37 @@ const SideBar: React.FC<Props> = ({ openMenu, handleOpen }) => {
         className='text-black absolute top-4 right-3 text-3xl cursor-pointer'
         onClick={handleOpen}
       />
-      <div className='mt-20 text-center text-3xl flex flex-col gap-10'>
+      <div className='mt-20 text-center text-3xl flex flex-col gap-3'>
         <Link
           href='/'
-          className={router.pathname === '/' ? activeClass : 'text-black'}
+          className={router.pathname === '/' ? activeClass : normalClass}
           onClick={handleOpen}
         >
+          <FaHome className='text-2xl' />
           {t('header.home')}
         </Link>
         <Link
           href='/sobre-mi'
-          className={router.pathname === '/sobre-mi' ? activeClass : 'text-black'}
+          className={router.pathname === '/sobre-mi' ? activeClass : normalClass}
           onClick={handleOpen}
         >
+          <FaUser className='text-2xl' />
           {t('header.about')}
         </Link>
         <Link
           href='/proyectos'
-          className={router.pathname === '/proyectos' ? activeClass : 'text-black'}
+          className={router.pathname === '/proyectos' ? activeClass : normalClass}
           onClick={handleOpen}
         >
+          <FaBriefcase className='text-2xl' />
           {t('header.projects')}
         </Link>
         <Link
           href='/resumen'
-          className={router.pathname === '/resumen' ? activeClass : 'text-black'}
+          className={router.pathname === '/resumen' ? activeClass : normalClass}
           onClick={handleOpen}
         >
+          <FaIdCard className='text-2xl' />
           {t('header.resume')}
         </Link>
       </div>
