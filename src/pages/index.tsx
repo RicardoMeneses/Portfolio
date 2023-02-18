@@ -11,7 +11,7 @@ export default function Home() {
   const { t } = useTranslation('common');
   return (
     <>
-      <div className='home-container__bg'>
+      <div className='bg-[url("/img/bg-home.jpg")] bg-center bg-no-repeat	bg-cover'>
         <div className='container mx-auto h-screen'>
           <div className='h-full flex flex-col md:flex-row items-center justify-center md:justify-start px-7 md:px-0'>
             <div className=' text-center md:text-start'>

@@ -12,9 +12,11 @@ const Default = ({ children }: any) => {
   const router = useRouter();
   return (
     <>
-      <Header />
-      <main className={ubuntu.className}>{children}</main>
-      {router.pathname !== '/' && <Footer />}
+      <div className={ubuntu.className}>
+        <Header />
+        <main>{children}</main>
+        {router.pathname !== '/' && <Footer />}
+      </div>
     </>
   );
 };
