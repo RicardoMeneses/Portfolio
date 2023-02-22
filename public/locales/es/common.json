@@ -14,7 +14,7 @@
   "about": {
     "title": "Sobre mí",
     "developer": "Desarrollador Web Full Stack",
-    "me": "Desarrollador Web con más de tres años de experiencia en backend y frontend con JavaScript / ReactJS / VueJS / NodeJS, en constante aprendizaje de habilidades y crecimiento profesional.",
+    "me": "Desarrollador Web con más de tres años de experiencia en Full Stack con JavaScript / ReactJS / VueJS / NodeJS / MongoDB, en constante aprendizaje de habilidades de programación y crecimiento profesional.",
     "interests": "Intereses y Hobbies",
     "programming": "Programación",
     "pingPong": "Tenis de Mesa",
@@ -38,7 +38,7 @@
     "black": "Cinta negra en diseño de arquitecturas para crear aplicaciones Web",
     "seo": "Becario SEO",
     "seoDescription": "Posicionamiento WEB, Desarrollo Web, Revisión y corrección de metadatos.",
-    "raccoon": "Creación, implementación y administración de sitios Web desde cero, Back-end y Front-end, E-Commerce, Uso de servicios en la nube con AWS, administración y gestión de servidores EC2.",
+    "raccoon": "Desarrollo y soporte de múltiples sitios web y plataformas de comercio electrónico. Servicios en la nube de AWS integrados con éxito para satisfacer necesidades de aplicaciones como: Envío de notificaciones y correos electrónicos con SNS, SES. Gestión y administración de servidores EC2. Uso de S3 para la administración de recursos. Route 53, sistema de nombres de dominio (DNS). Se implementó una canalización de CI/CD mediante Bitbucket Pipelines para automatizar la compilación y la implementación de aplicaciones. Notificaciones de Slack integradas para recibir alertas sobre el estado de la implementación y cualquier problema que pueda surgir.",
     "softSkills": "Habilidades blandas",
     "communication": "Comunicación",
     "teamwork": "Trabajo en equipo",

@@ -11,9 +11,9 @@ interface Props {
 
 const Button: React.FC<Props> = ({ text, haveIcon, icon }) => {
   const spanishResume =
-    'https://drive.google.com/file/d/1c5tPRZNMXJp4O-zps6deWTnX5hYRNtkF/view?usp=sharing';
+    'https://drive.google.com/file/d/19zeetduGED_by0mt1oNHJylx07wm9GT8/view?usp=sharing';
   const englishResume =
-    'https://drive.google.com/file/d/1-1b_aNheLF5jk7lrXfJZgw7cqC6K8kf6/view?usp=sharing';
+    'https://drive.google.com/file/d/1zBgN9hb_zUcWyQy3npOovugjhaEOcu2X/view?usp=sharing';
 
   const { locale } = useRouter();
   return (

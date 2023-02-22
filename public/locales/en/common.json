@@ -14,7 +14,7 @@
   "about": {
     "title": "About me",
     "developer": "Full Stack Web Developer",
-    "me": "Web developer with more than three years of experience in backend and frontend with JavaScript / ReactJS / VueJS / NodeJS, constantly learning skills and growing professionally.",
+    "me": "Web Developer with more than three years of experience in Full Stack with JavaScript / ReactJS / VueJS / NodeJS / MongoDB, constantly learning programming skills and professional growth.",
     "interests": "Interests and Hobbies",
     "programming": "Programming",
     "pingPong": "Ping Pong",
@@ -38,7 +38,7 @@
     "black": "Black ribbon in architecture design to create Web applications",
     "seo": "SEO Intern",
     "seoDescription": "WEB positioning, Web Development, Review and correction of metadata.",
-    "raccoon": "Creation, implementation and administration of websites from scratch, Back-end and Front-end, E-Commerce, Use of cloud services with AWS, administration and management of EC2 servers",
+    "raccoon": "Development and support of multiple websites and e-commerce platforms. Successfully integrated AWS cloud services to fulfill application needs like: Sending notifications and emails with SNS, SES. Management and administration of EC2 servers. Use of S3 for resources administration. Route 53, Domain Name System (DNS). A CI/CD pipeline was implemented using Bitbucket Pipelines to automate the build and deployment of applications. Built-in Slack notifications to receive alerts on the status of the implementation and any issues that may arise.",
     "softSkills": "Soft Skills",
     "communication": "Communication",
     "teamwork": "Teamwork",
