@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <div className='bg-[url("/img/bg-home.webp")] bg-center bg-no-repeat	bg-cover'>
         <div className='container mx-auto h-screen'>
-          <div className='h-full flex flex-col md:flex-row items-center justify-center md:justify-start px-7 md:px-0'>
-            <div className=' text-center md:text-start'>
+          <div className='h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start px-7 md:px-10 xl:px-0'>
+            <div className=' text-center lg:text-start'>
               <p className='text-white text-3xl md:text-4xl mb-2'>{t('home.hello')} 👋🏻</p>
               <p className='text-white text-5xl md:text-6xl font-bold mb-2'>
                 {t('home.iam')}{' '}
@@ -22,7 +22,7 @@ export default function Home() {
                   Ricardo Meneses
                 </span>
               </p>
-              <div className='flex flex-col md:flex-row justify-center md:justify-start items-center mb-5 gap-3'>
+              <div className='flex flex-col lg:flex-row justify-center lg:justify-start items-center mb-5 gap-3'>
                 <p className='text-white text-2xl md:text-3xl'>{t('home.developer')}</p>
                 <TypeAnimation
                   sequence={['Front-end', 1000, 'Back-end', 1000]}
@@ -35,7 +35,7 @@ export default function Home() {
                 />
               </div>
               <Button text={t('home.download')} haveIcon icon={faDownload} />
-              <div className='flex gap-4 mt-7 w-full md:w-2/6 justify-center md:justify-start'>
+              <div className='flex gap-4 mt-7 w-full lg:w-2/6 justify-center lg:justify-start'>
                 <IconLink
                   icon={faLinkedin}
                   href='https://www.linkedin.com/in/ricardo-meneses-morales/'

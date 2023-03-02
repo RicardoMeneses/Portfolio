@@ -56,7 +56,7 @@ const SobreMi = () => {
       <Banner title={t('about.title')} />
       <div className='grid grid-cols-2 justify-center items-center text-white p-10 md:p-0'>
         <div className=' col-span-2 md:col-span-1 relative w-full h-[28rem] flex justify-center items-center'>
-          <div className='bounce-top border-4 rounded-2xl border-[#222F42] absolute top-[5rem] right-[3rem] md:right-[16rem] h-80 w-64'></div>
+          <div className='bounce-top border-4 rounded-2xl border-[#222F42] absolute top-[5rem] right-[3rem] md:right-[6rem] lg:right-[16rem] h-80 w-64'></div>
           <Image
             className='bounce-top h-80 w-64 rounded-2xl object-cover z-10 shadow-md'
             src='/img/me.jpeg'

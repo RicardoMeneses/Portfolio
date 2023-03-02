@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { MenuItem } from '@szhsin/react-menu';
 import MyMenu from '../utils/Menu';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -15,6 +16,8 @@ const Header = () => {
   const { t } = useTranslation('common');
 
   const activeClass = 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-md py-1 px-2';
+  const inactiveClass =
+    'transition-all duration-150 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white hover:rounded-md hover:py-1 hover:px-2';
 
   const handleOpen = () => {
     setOpenMenu(!openMenu);
@@ -25,21 +28,34 @@ const Header = () => {
   };
   return (
     <header>
-      <nav className='bg-[#000]/50 text-white w-full fixed flex justify-between px-10 md:px-20 py-3 items-center z-50'>
+      <nav
+        className={`${
+          router.pathname === '/' ? 'bg-[#000]/0' : 'bg-[#000]/50'
+        } text-white w-full fixed flex justify-between px-10 md:px-20 py-3 items-center z-50`}
+      >
         <Link href='/' className='text-4xl'>
-          RM
+          <Image src='/img/logo.png' height={60} width={60} alt='Logo' />
         </Link>
-        <div className='hidden md:flex gap-20 font-bold items-center'>
-          <Link href='/' className={router.pathname === '/' ? activeClass : ''}>
+        <div className='hidden md:flex gap-20 md:gap-10 font-bold items-center'>
+          <Link href='/' className={router.pathname === '/' ? activeClass : inactiveClass}>
             {t('header.home')}
           </Link>
-          <Link href='/sobre-mi' className={router.pathname === '/sobre-mi' ? activeClass : ''}>
+          <Link
+            href='/sobre-mi'
+            className={router.pathname === '/sobre-mi' ? activeClass : inactiveClass}
+          >
             {t('header.about')}
           </Link>
-          <Link href='/proyectos' className={router.pathname === '/proyectos' ? activeClass : ''}>
+          <Link
+            href='/proyectos'
+            className={router.pathname === '/proyectos' ? activeClass : inactiveClass}
+          >
             {t('header.projects')}
           </Link>
-          <Link href='/resumen' className={router.pathname === '/resumen' ? activeClass : ''}>
+          <Link
+            href='/resumen'
+            className={router.pathname === '/resumen' ? activeClass : inactiveClass}
+          >
             {t('header.resume')}
           </Link>
           <div className='flex justify-center items-center cursor-pointer'>
