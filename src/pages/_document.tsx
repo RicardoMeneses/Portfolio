@@ -6,8 +6,17 @@ export default function Document() {
       <Head>
         <meta
           name='description'
-          content='Desarrollador Web Full Stack con más de tres años de experiencia'
+          content='Desarrollador Web con más de tres años de experiencia en Full Stack con JavaScript / ReactJS / VueJS / NodeJS / MongoDB'
         />
+        <meta name='keywords' content='Desarrollador Web, Full Stack, Front-End, Back-End' />
+        <meta name='author' content='Ricardo Meneses Morales' />
+        <meta property='og:title' content='Ricardo Meneses Morales - Desarrollador Web' />
+        <meta
+          property='og:description'
+          content='Desarrollador Web con más de tres años de experiencia en Full Stack con JavaScript / ReactJS / VueJS / NodeJS / MongoDB'
+        />
+        <meta property='og:url' content='https://soyricardom.com/' />
+        <meta property='og:image' content='https://soyricardom.com/img/logo.png' />
         <link rel='apple-touch-icon' sizes='57x57' href='/apple-icon-57x57.png' />
         <link rel='apple-touch-icon' sizes='60x60' href='/apple-icon-60x60.png' />
         <link rel='apple-touch-icon' sizes='72x72' href='/apple-icon-72x72.png' />
@@ -21,7 +30,7 @@ export default function Document() {
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='96x96' href='/favicon-96x96.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-        <link rel='manifest' href='/manifest.json' />
+        <link rel='manifest' href='/sie.manifest.json' />
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />

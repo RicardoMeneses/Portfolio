@@ -59,7 +59,7 @@ const SobreMi = () => {
           <div className='bounce-top border-4 rounded-2xl border-[#222F42] absolute top-[5rem] right-[3rem] md:right-[6rem] lg:right-[16rem] h-80 w-64'></div>
           <Image
             className='bounce-top h-80 w-64 rounded-2xl object-cover z-10 shadow-md'
-            src='/img/me.jpeg'
+            src='/img/me.png'
             alt='Ricardo Meneses'
             width={300}
             height={200}
